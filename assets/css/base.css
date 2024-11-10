@@ -1,0 +1,104 @@
+:root{
+    /* primary-color */
+    --primary-color: #80b500;
+
+     /* color */
+     --white-color: #ffffff;
+     --black-color: #000000;
+
+    /* text-color */
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+    --placeholder-text-color: #555555;
+
+    /* header */
+    --banner-height: 590px;
+    --header-height: 120px;
+
+   /* footer */
+   --padding-left-right-footer: 40px;
+}
+
+
+*{
+    box-sizing: border-box;;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    line-height: 2.4rem;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding-t-b-10 {
+    padding: 10px 0;
+}
+
+button.button {
+    padding: 10px 20px;
+    color: var(--black-text-color);
+    background-color: var(--white-color);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button.button.primary-button {
+    color: var(--white-text-color);
+    background-color: var(--primary-color);
+}
+
+button.big-button {
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+button.big-button.primary-button {
+    border: 1px solid var(--white-color);
+}
+
+.element--title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 58px;
+    text-transform: capitalize;
+}
+
+
+
+.bg-orange{
+    background-color: rgb(255 165 0);
+}
+
+
+.bg-d-green{
+    background-color: rgb(16 48 1);
+}
+
+
+.mg-left-6{
+    margin-left: 6px;
+}
+
+

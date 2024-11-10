@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshfruits</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Rajdhani:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- framework -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.6.0-web/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- js -->
+    <!-- <link rel="stylesheet" href="./assets/js/actions.js"> -->
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="header grid">
+        <div class="grid wide header__container ">
+            <div class="header__logo">
+                <img class="header__logo-img" src="./assets/image/freshfruits-logo.png" alt="">
+                <div class="header__logo-text">FRESHFRUITS</div>
+            </div>
+    
+            <div class="header__main">
+                <div class="header__navbar">
+                    <div class="header__navbar-items">
+                        <a href="" class="header__navbar-items-link header__navbar-items-link--select">Trang Chủ</a>
+                        <a href="" class="header__navbar-items-link">Giới Thiệu</a>
+                        <a href="" class="header__navbar-items-link">Sản Phẩm</a>
+                        <a href="" class="header__navbar-items-link">Liên Hệ</a>
+                        <a href="" class="header__navbar-items-link">Tin Tức</a>
+                        <a href="" class="header__navbar-items-link">Thư Viện</a>
+                    </div>
+                </div>
+    
+                <div class="header__actions">
+                    <button class="header__button button primary-button">LIÊN HỆ</button>
+                    <div class="header__actions-container">
+                        <div class="header__actions-container-search">
+                            <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></a>
+                        </div>
+                        <div class="header__actions-container-user">
+                            <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path></svg></a>
+                        </div>
+                        <div class="header__actions-container-cart">
+                            <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            
+            <div class="splide" id="image-slide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="https://images.unsplash.com/photo-1535228482415-b728d6e690c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NjkwNTE0Mg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="" class="splide__slide-image">
+                            <div class="banner__text c-4">
+                                <div class="banner__text-supertitle">100% Sản phẩm chính hãng</div>
+                                <div class="banner__text-title">Ngon & Tốt Cho<br>Sức Khỏe</div>
+                                <div class="banner__text-description">Khi mua sắm và chế biến trái cây, rau củ, hãy chú ý đa dạng hóa để đảm bảo cung cấp đủ dinh dưỡng và hấp dẫn.</div>
+                                <button class="banner__button button primary-button">KHÁM PHÁ NGAY</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/slideHeader.jpg?alt=media&token=d897daf6-1dd8-47d9-98f7-28d6d1b63695" alt="" class="splide__slide-image">
+                            <div class="banner__text-left c-4">
+                                <div class="banner__text-supertitle">100% Sản phẩm chính hãng</div>
+                                <div class="banner__text-title">Ngon & Tốt Cho<br>Sức Khỏe</div>
+                                <div class="banner__text-description-left">Nên ăn ít nhất 5 phần trái cây và rau mỗi ngày bao gồm trái cây và rau tươi, đông lạnh, khô và đóng hộp, cũng như sinh tố và nước ép trái cây 100%.</div>
+                                <button class="banner__button-left button primary-button">KHÁM PHÁ NGAY</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" class="splide__slide-image">
+                            <div class="banner__text c-4">
+                                <div class="banner__text-supertitle">100% Sản phẩm chính hãng</div>
+                                <div class="banner__text-title">Ngon & Tốt Cho<br>Sức Khỏe</div>
+                                <div class="banner__text-description">Chúng tôi sản xuất rau, thảo mộc, trứng, trái cây và thịt lợn thuần chủng chất lượng cao, được chứng nhận hữu cơ với giá cả cạnh tranh.</div>
+                                <button class="banner__button button primary-button">KHÁM PHÁ NGAY</button>
+                            </div>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Contain -->
+    <div class="contain">
+
+        <!-- discount -->
+        <div class="discount">
+            <div class="grid">
+                <div class="discount__container grid wide">
+                    <div class="discount__container-scene bg-orange">
+                        <div class="discount__container-main">
+                            <div class="discount__container-text">
+                                <div class="discount__container-text-suppertitle">HOT SALES</div>
+                                <div class="discount__container-text-title">Big Sale</div>
+                                <div class="discount__container-text-description">Mango & Juci</div>
+                                <button class="discount__container-btn button">
+                                    Buy Now
+                                    <svg style="margin-left: 8px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></g></svg>
+                                </button>
+                            </div>
+                            <div class="discount__container-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/promotion%2Forange.png?alt=media&token=f32b8380-bf79-4af8-9b01-717692fcb300" alt="" class="discount__container-img-icon">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="discount__container-scene bg-d-green">
+                        <div class="discount__container-main">
+                            <div class="discount__container-text">
+                                <div class="discount__container-text-suppertitle">HOT SALES</div>
+                                <div class="discount__container-text-title">Save 20%</div>
+                                <div class="discount__container-text-description">Every Order</div>
+                                <button class="discount__container-btn button">
+                                    Buy Now
+                                    <svg style="margin-left: 8px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></g></svg>
+                                </button>
+                            </div>
+                            <div class="discount__container-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/promotion%2Fpomelo.png?alt=media&token=6c2c2123-1905-435b-acbd-00ccb9f8eeea" alt="" class="discount__container-img-icon">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="discount__container-scene bg-orange">
+                        <div class="discount__container-main">
+                            <div class="discount__container-text">
+                                <div class="discount__container-text-suppertitle">HOT SALES</div>
+                                <div class="discount__container-text-title">Big Sale</div>
+                                <div class="discount__container-text-description">Pineapple</div>
+                                <button class="discount__container-btn button">
+                                    Buy Now
+                                    <svg style="margin-left: 8px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></g></svg>
+                                </button>
+                            </div>
+                            <div class="discount__container-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/promotion%2Fpineapple.png?alt=media&token=4785124f-7691-4c98-b0f5-b3a3b3e56dee" alt="" class="discount__container-img-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- product -->
+        <div class="products grid wide">
+            <div class="products__heading">Our Products</div>
+            <div class="products__navbar">
+                <ul class="products__navbar-items">
+                    <li class="products__navbar-items-link products__navbar-items-select">FOOD & DRINKS</li>
+                    <li class="products__navbar-items-link">VEGETABLES</li>
+                    <li class="products__navbar-items-link">DRIED</li>
+                    <li class="products__navbar-items-link">BREAD & CAKE</li>
+                    <li class="products__navbar-items-link">FISH & MEAT</li>
+                    <li class="products__navbar-items-link">FRUITS</li>
+                </ul>
+            </div>
+            <div class="products__container grid">
+                <div class="row mg-left-6">
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">new</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(122)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$2</div>
+                                    <div class="products__container-items-sprices-old">$2.12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">new</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(69)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$2</div>
+                                    <div class="products__container-items-sprices-old">$2.69</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/TheOriginal-900900whitebakground_edited_1000x.jpg?v=1637149030" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">new</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(111)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Forged In Wakefield - The Original Gin 37.5% Abv 70cl</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$3</div>
+                                    <div class="products__container-items-sprices-old">$3.5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fdrink%2Fdrink1.webp?alt=media&token=93e46c03-297f-4c44-a6a8-cf6389d9b6cb" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">new</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(24)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Ramon Bilbao Lalomba Rosado Rose Magnum 2019 1.5 litre in Wood Box</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$7</div>
+                                    <div class="products__container-items-sprices-old">$8.12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fdrink%2Fdrink2.webp?alt=media&token=893e0261-7cb1-412b-be4b-6b8023c9f9a0" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">offer</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(2805)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Johnnie Walker Blue Label Ghost and Rare Port Dundas Scotch Whisky 70cl</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$8</div>
+                                    <div class="products__container-items-sprices-old">$12.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fdrink%2Fdrink3.webp?alt=media&token=2a2912a8-5095-4c48-8739-b690d7869a33" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">new</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(154)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Vecchia Romagna Etichetta Nera Brandy Miniature 3cl</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$9</div>
+                                    <div class="products__container-items-sprices-old">$10.5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fdrink%2Fdrink4.webp?alt=media&token=7ab8ef82-d7e7-47fe-aff3-31052d446fc8" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label label-red">big sale</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(544)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Belvedere</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$1.99</div>
+                                    <div class="products__container-items-sprices-old">$12.5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="products__container-scene col c-3">
+                        <div class="products__container-items">
+                            <a href="" class="products__container-items-link">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fdrink%2Fdrink5.webp?alt=media&token=f9053580-f90a-477b-adde-7bf9a4d8907e" alt="" class="products__container-items-img">
+                                <span class="products__container-items-label">new</span>
+                                <div class="products__container-items-icon">
+                                    <button class="products__btn">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="products__btn">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </a>
+                            <div class="products__container-items-info">
+                                <div class="products__container-items-rating">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span class="products__container-items-quantily">(80)</span>
+                                </div>
+                                <div class="products__container-items-title">
+                                    <a href="" class="products__container-items-title-link">Seven</a>
+                                </div>
+                                <div class="products__container-items-sprices">
+                                    <div class="products__container-items-sprices-new">$8.99</div>
+                                    <div class="products__container-items-sprices-old">$12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- deal -->
+        <div class="deal">
+            <div class="deal__wrapper">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-5">
+                            <div class="deal__product">
+                                <img class="deal__propduct--image" src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/countdown%2Fhoney_jar.png?alt=media&token=d72546a1-8ba2-476b-9670-ffd983c15b89" alt="image" >
+                            </div>
+                        </div>
+                        <div class="col l-7">
+                            <div class="deal__content">
+                                <div class="deal__subtitle">Todays Hot Deals</div>
+                                <div class="deal__title">Original Stock Honey Combo Package</div>
+                                <div class="deal__countdown">
+                                    <div class="deal__time">
+                                        <span id="deal_days">00</span>
+                                        <p>DAYS</p>
+                                    </div>
+                                    <div class="deal__time">
+                                        <span id="deal_hours">00</span>
+                                        <p>HRS</p>
+                                    </div>
+                                    <div class="deal__time">
+                                        <span id="deal_minutes">00</span>
+                                        <p>MINS</p>
+                                    </div>
+                                    <div class="deal__time">
+                                        <span id="deal_seconds">00</span>
+                                        <p>SECS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- invesment -->
+        <div class="invesment">
+            <div class="invesment__wrapper">
+                <div class="invesment__suptitle">portpolio</div>
+                <div class="element--title">We Have Done</div>
+                <div class="invesment__content">
+                    <section class="splide" id="invesment" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide col l-2-5">
+                                    <div class="invesment__item">
+                                        <img class="invesment__image" src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/portfolio%2Fgarden1.webp?alt=media&token=0706b489-93eb-4951-80d7-3e08dd1c1dd6" alt="image" >
+                                    </div>
+                                  </li>
+                              </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- blogs -->
+        <div class="blogs ">
+            <div class="element--title">Lastest Blog</div>
+            <div class="blogs-content">
+                <section class="splide" id="blog" aria-label="Ví dụ HTML cơ bản của Splide">
+                    <div class="splide__track padding-t-b-10">
+                            <ul class="splide__list">
+                                <li class="splide__slide col l-4">
+                                    <div class="card">
+                                        <a  href="" class="card__link">
+                                            <div class="card__image">
+                                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
+                                            </div>
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="tags">
+                                                <span class="tag">vegetable garden</span>
+                                                <span class="tag">tips</span>
+                                            </div>
+                                            <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
+                                            <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
+                                    
+                                            <div class="card__footer">
+                                                <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
+                                                <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>  
+                            </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <!-- footer-contain -->
+        <div class="footer__contain">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-3">
+                        <img src="./assets/image/freshfruits-logo.png" alt="" class="footer__logo">
+                        <p class="footer__descr">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span style="margin-left: 10px;">London, United Kingdom</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <span style="margin-left: 10px;">+0123-456789</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span style="margin-left: 10px;">example@gmailm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer__item--title">Company</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Locations Map</a>
+                            </li>   
+                        </ul>
+                    </div>
+                    
+                    <div class="col l-2">
+                        <div class="footer__item--title">Services</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Order tracking</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Promotional Offers</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer__item--title">Customer Care</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sign in</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Register</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">My Account</a>
+                            </li>   
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Wishlist</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <div class="footer__item--title">newsletter</div>
+                        <p class="footer__descr">Subscribe to our weekly Newsletter and receive updates via email.</p>
+                        <div class="email-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="footer__copyright">
+            <div class="copyright--left">
+                <p class="copyright--text">All Rights Reserved @ Company 2023</p.co>
+            </div>
+            <div class="copyright--right">
+                <p class="copyright--text">Terms & Conditions</p>
+                <p class="copyright--text">Claim</p>
+                <p class="copyright--text">Privacy & Policy</p>
+            </div>
+        </div>
+
+        <!-- footer rise -->
+        <div class="footer__rise">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-1.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Curated Products</div>
+                                <p class="rise__item--descr">Provide Curated Products for all product over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-2.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Handmade</div>
+                                <p class="rise__item--descr">We ensure the product quality that is our main goal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-3.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Natural Food</div>
+                                <p class="rise__item--descr">Return product within 3 days for any product you buy
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-4.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Free home delivery</div>
+                                <p class="rise__item--descr">We ensure the product quality that you can trust easily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+
+    <script src="./assets/js/actions.js"></script>
+    <script src="./assets/js/coutdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+</html>
