@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // splide invesment
-
 document.addEventListener('DOMContentLoaded', function () {
     var splideInvesment = new Splide( '#invesment', {
         type   : 'loop',
@@ -21,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         perMove: 1,
         autoplay  : true,      
         interval  : 1000, 
+        pagination: true
       } );
       
       splideInvesment.mount();
