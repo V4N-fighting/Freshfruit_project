@@ -5,7 +5,7 @@
      /* color */
      --white-color: #ffffff;
      --black-color: #000000;
-
+     --light-green: #b3d362;
     /* text-color */
     --white-text-color: #ffffff;
     --black-text-color: #000000;
@@ -29,8 +29,7 @@
 html{
     font-size: 62.5%;
     line-height: 2.4rem;
-    font-family: 'Poppins',sans-serif;
-    
+    font-family: "Oswald", sans-serif;
 }
 
 ul {
