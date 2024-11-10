@@ -1,2 +1,3 @@
 Các vấn đề cần phải giải quyết:
 - chưa autoplay được cái slide
+- mấy cái button của header chưa xử lý xong
