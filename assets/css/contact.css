@@ -187,8 +187,142 @@
     align-items: center;
 }
 
-/* -------------------------------- END - blogs --------------------------------------- */
+/* contain */
+.contain{
+    margin-top: 112px;
 
+}
+
+.contain__contacts{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contain__contacts-main{
+    display: flex;
+    margin-bottom: 80px;
+    gap: 32px;
+}
+
+.contain__contacts-items{
+    padding: 48px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.contain__contacts-logo{
+    width: 84px;
+}
+
+.contain__contacts-title{
+    font-size: 2.4rem;
+    line-height: 32px;
+    font-weight: 500;   
+    margin-top: 24px;
+}
+
+.contain__contacts-suppertitle{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 12px;
+}
+
+.contain__contacts-suppertitle:visited{
+    color: blue;
+}
+
+.contain__map{
+    margin-bottom: 130px;
+}
+
+.contain__form{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contain__form-container{
+    padding: 48px 24px 64px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 112px;
+}
+
+.contain__form-label{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.contain__form-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contain__form-items-input{
+    width: 100%;
+    padding: 16px 24px;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.contain__form-icon{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-right: 16px;
+}
+
+.contain__form-items select{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.contain__form-text{
+    margin: 32px 0;
+}
+
+.contain__form-text textarea{
+    width: 100%;
+    height: 144px;
+    font-size: 1.6rem;
+    padding: 16px 24px;
+    border: 1px solid #ccc;
+}
+
+.contain__form-text textarea:focus{
+    border-color: var(--primary-color) !important;
+}
+
+.contain__form-checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contain__form-checkbox input{
+    margin: 12px 0;
+}
+
+.contain__form-checkbox span{
+    font-size: 1.8rem;
+    margin-left: 8px;
+    text-transform: capitalize;
+}
+
+.contain__form-btn{
+    min-width: 180px;
+    height: 54px;
+}
 
 /* --------------------------------  START - footer --------------------------------------- */
 .footer {
@@ -358,3 +492,36 @@
 .rise__item--border--right {
     border-right: 1px solid #333333;
 }
+
+/* scroll to top */
+/* Add cart button */
+#addCard, #scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 140px; 
+    right: 20px; 
+    z-index: 99; 
+    font-size: 20px;
+    background-color: #d6f4ad; 
+    color: var(--primary-color); 
+    border: none; 
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    transition: all 0.2s ease-out;
+}
+
+#addCard:hover, #scrollTopBtn:hover {
+    background-color: var(--primary-color); 
+    color: var(--white-color);
+    transform: translateY(-5px);
+}
+
+#scrollTopBtn {
+    bottom: 70px; 
+}
+
