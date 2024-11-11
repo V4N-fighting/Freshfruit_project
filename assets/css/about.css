@@ -165,6 +165,385 @@
     width: 16px;
     fill: #000;
 }
+/* ----------------------------------END - header ---------------------------- */
+
+
+
+
+
+
+/* ----------------------------------START - contain ---------------------------*/ 
+
+.contain {
+
+}
+
+/* about us */
+
+.about__us {
+    padding: 120px 0;
+}
+
+.about__us .about__us--content {
+    padding: 0 0 0 40px;
+}
+
+.about__us img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 0 10px;
+}
+
+.about__us .about__us--img1 {
+    transform: translateY(-15px);
+}
+
+.about__us .about__us--img2 {
+    transform: translateY(25px);
+}
+
+.about__us .about__us--suptitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin: 0 0 20px;
+}
+
+.about__us .about__us--title {
+    font-size: 48px;
+    text-transform: capitalize;
+    color: var(--black-text-color);
+    margin: 0 0 48px;
+}
+
+.about__us .about__us--provide {
+    font-size: 16px;
+    color: var(--black-text-color);
+    padding: 10px 30px;
+    border-left: 1px solid var(--primary-color);
+    margin: 0 0 48px
+}
+
+.about__us .about__us--descr {
+    font-size: 16px;
+    color: var(--black-text-color);
+    margin: 0 0 40px;
+}
+
+.about__us .about__us--director {
+    display: flex;
+    align-items: center;
+}
+
+.about__us .director__name--text {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+.about__us .director__name--label {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.about__us .director__signature {
+    height: 100%;
+    width: auto;
+}
+
+
+/* why choose us */
+.why-choose-us {
+    padding: 120px 0;
+    background-color: #f7f5eb;
+}
+
+
+.why-choose-us .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 0;
+}
+
+.why-choose-us .card .card__header{
+    display: flex;
+    align-items: center;
+}
+
+.why-choose-us .card .card__header img {
+    height: auto;
+    max-width: 100%;
+}
+
+.why-choose-us .card .card__header span {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 24px;
+}
+
+.why-choose-us .card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* some question */
+.question {
+    padding: 120px 0;
+}
+
+.question .question__list{
+    margin : 0 10px;
+    transform: translateY(10px);
+}
+
+.question .question__item{
+    padding: 20px 25px;
+    border: 0.5px solid #dddddd;
+    cursor: pointer;
+}
+
+.question .question__item--content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question .question__item .question_text{
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 80%;              
+    white-space: nowrap;       
+    overflow: hidden;          
+    text-overflow: ellipsis;
+}
+
+.question .question__item span{
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--primary-color);
+    background-color: #f7f5eb;
+}
+
+.question .question__item--answer{
+    display: none;
+    font-size: 16px;
+    color: var(--black-text-color);
+    margin-top: 20px;
+}
+
+.question .question__item--answer.open{
+    display: block; /* Hiển thị phần tử khi mở rộng */
+}
+
+
+.question .question__avt{
+    width: 100%;
+    height: auto;
+    transform: translateY(80px);
+    margin:  0 10px;
+}
+
+
+
+/* feedback */
+.feedback {
+    padding: 120px 0;
+    background-attachment: fixed;
+    background-image: url('https://images.unsplash.com/photo-1513223945279-4bf9e7049c9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2092&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feedback .wide{
+    width: 900px;
+}
+
+
+.feedback .feedback__title{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--white-text-color);
+    text-transform: capitalize;
+}
+
+.feedback .feedback__descr{
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white-text-color);
+    margin: 0 auto 40px;
+}
+
+.feedback .feedback__form{
+    display: flex;
+    align-items: center;
+}
+
+.feedback .feedback__input{
+    flex: 1;
+    padding: 20px 40px;
+    background-color: var(--white-color);
+    line-height: 1;
+    border-radius: 2px;
+}
+
+.feedback .feedback__input input{
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--black-text-color);
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback__btn {
+    padding: 25px 40px;
+    font-size: 18px;
+    line-height: 1;
+    background-color: var(--primary-color);
+    color: var(--white-text-color);
+    border: none;
+    outline: none;
+    margin-left: 20px ;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.feedback__btn:hover {
+    background-color: #7fb500c8;
+}
+
+/* blog */
+.blogs {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.blogs-content {
+    max-width: 1240px;
+    margin: 0 -12px;
+    clip-path: inset(0px 0px 0px 0px);
+}
+
+
+.blogs .splide__slide::before {
+    display: none;
+}
+
+
+.blogs .card {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 8px;
+}
+
+.blogs .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.blogs .card:hover .card__title{
+    color: var(--primary-color);
+}
+
+.blogs .card__link {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 70%;
+    overflow: hidden;
+}
+
+.blogs .card__image  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.blogs .card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogs .card__content {
+    padding: 16px 16px 0;
+}
+
+.blogs .tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 0 10px;
+}
+
+.blogs .tag {
+    background-color: var(--white-text-color);
+    color: var(--black-text-color);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 10px 8px;
+    border-radius: 16px;
+    text-transform: lowercase;
+    border: 1px solid var(--primary-color);
+    box-shadow: rgba(5, 44, 3, 0.1) 0px 4px 16px, rgba(5, 44, 3, 0.1) 0px 8px 24px, rgba(5, 44, 3, 0.1) 0px 16px 56px;
+}
+
+.blogs .card__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    color: var(--black-text-color);
+    transition: all 0.2s linear;
+}
+
+.blogs .card__title:hover {
+    color: var(--primary-color);
+}
+
+.blogs .card__text {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 26px 0;
+    padding-right: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+    max-height: 4.8rem; /* Giới hạn chiều cao gần bằng 2 dòng */
+}
+
+
 
 .blogs .card__footer {
     display: flex;
@@ -187,7 +566,11 @@
     align-items: center;
 }
 
-/* -------------------------------- END - blogs --------------------------------------- */
+
+/* ----------------------------------END - contain =--------------------------------*/
+
+
+
 
 
 /* --------------------------------  START - footer --------------------------------------- */
@@ -358,3 +741,8 @@
 .rise__item--border--right {
     border-right: 1px solid #333333;
 }
+
+
+
+/* Dùng chung */
+
