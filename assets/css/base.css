@@ -103,3 +103,7 @@ button.big-button.primary-button {
 .mg-top-32{
     margin-top: 32px;
 }
+
+.gap-32{
+    gap: 32px;
+}
