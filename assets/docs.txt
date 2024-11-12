@@ -1,3 +1,27 @@
 Các vấn đề cần phải giải quyết:
+
+
+
+Thiếu:
+
+Văn
+- trang blog bài viết -> ok
+- thiếu trang register -> ok
+- thiếu trang sign in -> ok
+- checkout page -> đợi Tân
+- model view -> đợi Tân
+- nút mua ngay cái đếm ngược deal -> ok
 - chưa autoplay được cái slide
+
+
+
+
+
+Tân
+- trang sản phẩm -> hard
+- trang account
+- card page
+- wishlist page
+- model card
 - mấy cái button của header chưa xử lý xong
+
