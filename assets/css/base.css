@@ -104,6 +104,39 @@ button.big-button.primary-button {
     margin-top: 32px;
 }
 
+<<<<<<< HEAD
 .gap-32{
     gap: 32px;
+=======
+/* scroll to top */
+/* Add cart button */
+#addCard, #scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 140px; 
+    right: 20px; 
+    z-index: 99; 
+    font-size: 20px;
+    background-color: #d6f4ad; 
+    color: var(--primary-color); 
+    border: none; 
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    transition: all 0.2s ease-out;
+}
+
+#addCard:hover, #scrollTopBtn:hover {
+    background-color: var(--primary-color); 
+    color: var(--white-color);
+    transform: translateY(-5px);
+}
+
+#scrollTopBtn {
+    bottom: 70px; 
+>>>>>>> b034d4cecb6e8a0e00a390c40b4da14e33c2837a
 }
