@@ -201,9 +201,6 @@
     gap: 32px;
 }
 
-.grid-col-8 {
-    width: 66.66667%;
-}
 
 
 .contain__card {
@@ -385,9 +382,7 @@
 /* Khối thứ 1 - end */
 
 /* Khối thứ 2 chiếm 33,333% */
-.grid-col-4 {
-    width: 33.33333%;
-}
+
 .contain__info{
     padding: 32px;
     border: .5px solid #e5e7eb;

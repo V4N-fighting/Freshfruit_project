@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
 
     
 </head>
@@ -38,8 +38,8 @@
                             <a href="/#" class="header__navbar-items-link">Trang Chủ</a>
                             <a href="./about.html" class="header__navbar-items-link">Giới Thiệu</a>
                             <a href="./shop.html" class="header__navbar-items-link">Sản Phẩm</a>
-                            <a href="./contact.html" class="header__navbar-items-link header__navbar-items-link--select">Liên Hệ</a>
-                            <a href="./blog.html" class="header__navbar-items-link">Tin Tức</a>
+                            <a href="./contact.html" class="header__navbar-items-link">Liên Hệ</a>
+                            <a href="./blog.html" class="header__navbar-items-link header__navbar-items-link--select">Tin Tức</a>
                         </div>
                     </div>
         
@@ -64,11 +64,11 @@
             <div class="header__banner-text grid wide">
                 <div class="header__title">
                     <div class="header__title-caption">Welcome to our company</div>
-                    <div class="header__title-main">Contact</div>
+                    <div class="header__title-main">My Acount</div>
                 </div>
                 <div class="header__path">
-                    <div class="header__path-root">Home</div>
-                    <div class="header__path-sections">Contact</div>
+                    <div class="header__path-text border-right">Home</div>
+                    <div class="header__path-text">My Acount</div>
                 </div>
             </div>
         </div>
@@ -77,69 +77,64 @@
 
     <!-- contain -->
     <div class="contain">
-        <div class="contain__contacts">
-            <div class="contain__contacts-main">
-                <div class="contain__contacts-items ">
-                    <img src="./assets/image/contact img/email-logo.png" alt="" class="contain__contacts-logo">
-                    <div class="contain__contacts-title">Email Address</div>
-                    <a href="mailto:contact@freshfruits.vn" class="contain__contacts-suppertitle">contact@freshfruits.vn</a>
+        <div class="contain__main">
+            <div class="contain__heading border-bottom">
+                <div class="contain__heading-text">My account</div>
+                <button class="contain__heading-button button primary-button">Sign out</button>
+            </div>
+            <div class="contain__container">
+                <div class="contain__sidebar grid-col-4">
+                    <div class="contain__sidebar-info">
+                        <div class="contain__sidebar-avatar">
+                            <img class="contain__sidebar-img" src="https://scontent.fsgn7-2.fna.fbcdn.net/v/t39.30808-6/438222889_968006034915022_1112029426357748081_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Fc-_Y4FDhBIQ7kNvgENyAWB&_nc_zt=23&_nc_ht=scontent.fsgn7-2.fna&_nc_gid=AGGMSVOw-8b2FsPir972k6a&oh=00_AYBMHuyYjl9DT34ykraTsSpIjX7JjY2_UG0hhQ0-pn8RJg&oe=673A6E97" alt="">
+                            <div class="contain__sidebar-avtar-edit"><i class="fa-solid fa-camera"></i></div>
+                        </div>
+                        <div class="contain__sidebar-name">Chế Nhật Tân</div>
+                        <div class="contian__sidebar-email">chenhattan280504@gmail.com</div>
+                    </div>
+
+                    <ul class="contain__sidebar-list">
+                        <li><a href="" class="contain__sidebar-items items-select">Personal information</a></li>
+                        <li><a href="" class="contain__sidebar-items">Billing & Payments</a></li>
+                        <li><a href="" class="contain__sidebar-items">Order History</a></li>
+                        <li><a href="" class="contain__sidebar-items">Gift Cards</a></li>
+                    </ul>
+
                 </div>
-                <div class="contain__contacts-items ">
-                    <img src="./assets/image/contact img/phone-logo.png" alt="" class="contain__contacts-logo">
-                    <div class="contain__contacts-title">Phone Number</div>
-                    <a href="tel:+84387407367,+84905291271" class="contain__contacts-suppertitle">+84387407367<br>+84905291271</a>
-                </div>
-                <div class="contain__contacts-items">
-                    <img src="./assets/image/contact img/address-logo.png" alt="" class="contain__contacts-logo">
-                    <div class="contain__contacts-title">Offical Address</div>
-                    <a href="https://maps.app.goo.gl/4X7Hx3xSDwFMYggD8" class="contain__contacts-suppertitle">21 Hẻm 464, Đông Hưng Thuận, Quận 12,<br>Hồ Chí Minh, Việt Nam</a>
+                <div class="contain__content grid-col-8">
+                    <div class="contain__content-text">
+                        <div class="contain__content-heading">Personal information</div>
+                        <div class="contain__content-description">Manage your personal information, including phone numers and email adress where you can be contacted</div>
+                    </div>
+                    <div class="contain__content-userinfo">
+                        <div class="contain__content-userinfo-items">
+                            <div class="contain__content-userinfo-title">Name</div>
+                            <div class="contain__content-userinfo-sub">Chế Nhật Tân</div>
+                            <div class="contain__content-userinfo-icon"><i class="fa-solid fa-circle-user"></i></div>
+                        </div>
+                        <div class="contain__content-userinfo-items">
+                            <div class="contain__content-userinfo-title">Date of Birth</div>
+                            <div class="contain__content-userinfo-sub">28 May 2004</div>
+                            <div class="contain__content-userinfo-icon"><i class="fa-regular fa-calendar-days"></i></div>
+                        </div>
+                        <div class="contain__content-userinfo-items">
+                            <div class="contain__content-userinfo-title">Country Region</div>
+                            <div class="contain__content-userinfo-sub">TP.Ho Chi Minh, Viet Nam</div>
+                            <div class="contain__content-userinfo-icon"><i class="fa-solid fa-globe"></i></div>
+                        </div>
+                        <div class="contain__content-userinfo-items">
+                            <div class="contain__content-userinfo-title">Languange</div>
+                            <div class="contain__content-userinfo-sub">Vietnamese</div>
+                            <div class="contain__content-userinfo-icon"><i class="fa-brands fa-angular"></i></div>
+                        </div>
+                        <div class="contain__content-userinfo-items">
+                            <div class="contain__content-userinfo-title">Contactable at</div>
+                            <div class="contain__content-userinfo-sub">chenhattan280504@gmail.com</div>
+                            <div class="contain__content-userinfo-icon"><i class="fa-solid fa-envelope"></i></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="contain__form">
-            <div class="contain__form-container">
-                <div class="contain__form-label">
-                    <div class="contain__form-items">
-                        <input class="contain__form-items-input" type="text" placeholder="Enter your name">
-                        <div class="contain__form-icon"><i class="fa-solid fa-user"></i></div>
-                    </div>
-                    <div class="contain__form-items">
-                        <input class="contain__form-items-input" type="email" placeholder="Enter your email">
-                        <div class="contain__form-icon"><i class="fa-solid fa-envelope"></i></div>
-                    </div>
-                </div>
-
-                <div class="contain__form-label mg-top-32">
-                    <div class="contain__form-items">
-                        <select name="selectOption" id="selectOption">
-                            <option value="">Select Service Type</option>
-                            <option value="Gardening">Gardening</option>
-                            <option value="Landscaping">Landscaping</option>
-                            <option value="Vegetables Growing">Vegetables Growing</option>
-                            <option value="Land Preparation">Land Preparation</option>
-                        </select>
-                    </div>
-                    <div class="contain__form-items">
-                        <input class="contain__form-items-input" type="" placeholder="Enter phone number">
-                        <div class="contain__form-icon"><i class="fa-solid fa-phone"></i></div>
-                    </div>
-                </div>
-                
-                <div class="contain__form-text">
-                    <textarea name="massage" id="massage" placeholder="Enter massage"></textarea>
-                </div>
-
-                <div class="contain__form-checkbox">
-                    <input type="checkbox">
-                    <span>Save my name, email, and website in this browser for the next time I comment.</span>
-                </div>
-                <button class="contain__form-btn button primary-button">GET AN FREE SERVICE</button>
-            </div>
-        </div>
-
-        <div class="contain__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33713.4383389749!2d106.59495645631537!3d10.85978855607925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175296e56c858eb%3A0x9f52965c788a8051!2zVGjhur8gR2nhu5tpIFRyw6FpIEPDonkgc-G6oWNoIFRwLkhDTQ!5e0!3m2!1svi!2s!4v1731266067620!5m2!1svi!2s" width="100%" height="800px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
@@ -301,10 +296,10 @@
     <!-- scroll-to-top -->
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
+
+    <script src="./assets/js/onClick.js"></script>
     <script src="./assets/js/scrollToTop.js"></script>
     <script src="./assets/js/scrollToShowButton.js"></script>
-    <script src="./assets/js/actions.js"></script>
-    <script src="./assets/js/coutdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>

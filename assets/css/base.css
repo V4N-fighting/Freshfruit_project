@@ -168,6 +168,14 @@ button.big-button.primary-button {
     border-bottom-width: 1px;
 }
 
+.grid-col-4 {
+    width: 33.33333%;
+}
+
+.grid-col-8 {
+    width: 66.66667%;
+}
+
 /* scroll to top */
 /* Add cart button */
 #addCard, #scrollTopBtn {

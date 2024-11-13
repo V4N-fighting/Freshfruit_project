@@ -273,9 +273,7 @@
 
 /* slide - end */
 
-.grid-col-8 {
-    width: 66.66667%;
-}
+
 
 .contain__items-info-rating{
     font-size: 1.4rem;
@@ -355,7 +353,7 @@
     display: flex;
     height: 56px;
 }
-
+.contain__items-button-next,
 .contain__items-button-prev{
     background-color: var(--white-color);
     border-radius: 4px;
@@ -363,6 +361,7 @@
     width: 48px;
 }
 
+.contain__items-button-next:hover,
 .contain__items-button-prev:hover{
     border: 2px solid var(--primary-color);
 }
@@ -552,9 +551,7 @@ button.contain__tab-button-main{
 /* Khối thứ 1 - end */
 
 /* Khối thứ 2 chiếm 33,333% */
-.grid-col-4 {
-    width: 33.33333%;
-}
+
 .contain__info{
     padding: 32px;
     border: 1px solid #e5e7eb;
