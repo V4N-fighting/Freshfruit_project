@@ -8,8 +8,8 @@ Văn
 - trang blog bài viết -> ok
 - thiếu trang register -> ok
 - thiếu trang sign in -> ok
-- checkout page -> đợi Tân
-- model view -> đợi Tân
+- checkout page -> ok
+- model view ->  -> ok
 - nút mua ngay cái đếm ngược deal -> ok
 - chưa autoplay được cái slide -> ok
 
