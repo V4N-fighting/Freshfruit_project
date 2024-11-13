@@ -19,8 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 5,
         perMove: 1,
         autoplay  : true,      
-        interval  : 1000, 
-        pagination: true
+        interval  : 5000, 
+        arrows: true,
+        pagination: true,
       } );
       
       splideInvesment.mount();
@@ -34,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 3,
         perMove: 1,
         autoplay  : true,      
-        interval  : 1000, 
+        interval  : 5000, 
+        pagination: false
       } );
       
       splide.mount();

@@ -1,3 +1,22 @@
+.view__all--btn {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-text-color);
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.view__all--btn:hover {
+    text-decoration: underline;
+    color: var(--primary-color)
+}
+
 /* -------------------------------------------    header     --------------------------------------------------*/
 .header{
     font-family: "Oswald", sans-serif;
@@ -119,7 +138,6 @@
     width: 100%;
     height: var(--banner-height);
     top: 0px;
-    z-index: -1;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -656,10 +674,25 @@ button.products__btn:hover{
     justify-content: center;
     flex-direction: column;
     padding: 120px 0;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url('https://cdn.pixabay.com/photo/2018/07/20/14/02/grapes-3550733_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deal::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.764);
 }
 
 .deal__wrapper {
     margin: 0 180px;
+    z-index: 2;
 }
 
 .deal__product, .deal__content {
@@ -688,6 +721,7 @@ button.products__btn:hover{
     margin-bottom: 58px;
     text-transform: capitalize;
     line-height: 1.4;
+    color: var(--white-text-color)
 }
 
 .deal__countdown {
@@ -712,11 +746,55 @@ button.products__btn:hover{
 
 .deal__time p {
     font-size: 20px;
-    color: var(--black-text-color);
+    color: var(--white-text-color);
     margin-top: 35px;
 }
 
+.deal__buy--btn {
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--black-text-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 150px;
+    outline: none;
+    overflow: hidden;
+    padding: 15px 0;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-color .2s linear;
+}
 
+.deal__buy--btn:hover span {
+    color: var(--black-text-color);
+}
+
+.deal__buy--btn:hover::after {
+    width: 0%;
+}
+
+.deal__buy--btn::after {
+    background-color: var(--primary-color);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .25s linear;
+    width: 100%;
+}
+
+.deal__buy--btn span {
+    color: var(--white-color);
+    position: relative;
+    transition: all .15s linear;
+    z-index: 1;
+}
 
 /* invesment */
 .invesment {

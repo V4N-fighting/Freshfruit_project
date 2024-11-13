@@ -76,12 +76,62 @@ button.big-button.primary-button {
     border: 1px solid var(--white-color);
 }
 
+/* button có hiệu ứng hover trượt ngang */
+.button__hover--effect {
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--black-text-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 150px;
+    outline: none;
+    overflow: hidden;
+    padding: 15px 0;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-color .2s linear;
+}
+
+.button__hover--effect:hover span {
+    color: var(--black-text-color);
+}
+
+.button__hover--effect:hover::after {
+    width: 0%;
+}
+
+.button__hover--effect::after {
+    background-color: var(--primary-color);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .25s linear;
+    width: 100%;
+}
+
+.button__hover--effect span {
+    color: var(--white-color);
+    position: relative;
+    transition: all .15s linear;
+    z-index: 1;
+}
+/* end button */
+
 .element--title {
     text-align: center;
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 58px;
     text-transform: capitalize;
+    position:relative;
+    width: 1200px;
 }
 
 
