@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
 
     
 </head>
@@ -38,7 +38,7 @@
                             <a href="/#" class="header__navbar-items-link">Trang Chủ</a>
                             <a href="./about.html" class="header__navbar-items-link">Giới Thiệu</a>
                             <a href="./shop.html" class="header__navbar-items-link">Sản Phẩm</a>
-                            <a href="./contact.html" class="header__navbar-items-link header__navbar-items-link--select">Liên Hệ</a>
+                            <a href="./contact.html" class="header__navbar-items-link ">Liên Hệ</a>
                             <a href="./blog.html" class="header__navbar-items-link">Tin Tức</a>
                         </div>
                     </div>
@@ -76,67 +76,99 @@
     </div>
 
     <!-- contain -->
-    <div class="contain">
-        <div class="contain__contacts">
-            <div class="contain__contacts-main">
-                <div class="contain__contacts-items col l-4">
-                    <img src="./assets/image/contact img/email-logo.png" alt="" class="contain__contacts-logo">
-                    <div class="contain__contacts-title">Email Address</div>
-                    <a href="mailto:contact@freshfruits.vn" class="contain__contacts-suppertitle">contact@freshfruits.vn</a>
-                </div>
-                <div class="contain__contacts-items col l-4">
-                    <img src="./assets/image/contact img/phone-logo.png" alt="" class="contain__contacts-logo">
-                    <div class="contain__contacts-title">Phone Number</div>
-                    <a href="tel:+84387407367,+84905291271" class="contain__contacts-suppertitle">+84387407367<br>+84905291271</a>
-                </div>
-                <div class="contain__contacts-items col l-4">
-                    <img src="./assets/image/contact img/address-logo.png" alt="" class="contain__contacts-logo">
-                    <div class="contain__contacts-title">Offical Address</div>
-                    <a href="https://maps.app.goo.gl/4X7Hx3xSDwFMYggD8" class="contain__contacts-suppertitle">21 Hẻm 464, Đông Hưng Thuận, Quận 12,<br>Hồ Chí Minh, Việt Nam</a>
-                </div>
+    <div class="contain checkout grid wide">
+        
+        <div class="address-container">
+            <h3>Địa Chỉ Nhận Hàng</h3>
+            <div class="address-details">
+              <p><strong>Lương Ngọc Văn</strong> (+84) <strong>905291271</strong> &nbsp;&nbsp; 18t Tch 18, Phường Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh</p>
+              <span class="default-badge">Mặc Định</span>
+              <a href="#" class="change-link">Thay Đổi</a>
             </div>
         </div>
-
-        <div class="contain__form">
-            <div class="contain__form-container">
-                <div class="contain__form-label">
-                    <div class="contain__form-items">
-                        <input class="contain__form-items-input" type="text" placeholder="Enter your name">
-                        <div class="contain__form-icon"><i class="fa-solid fa-user"></i></div>
-                    </div>
-                    <div class="contain__form-items">
-                        <input class="contain__form-items-input" type="email" placeholder="Enter your email">
-                        <div class="contain__form-icon"><i class="fa-solid fa-envelope"></i></div>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th class="text__align-left">Sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text__align-left">
+                        <img src="https://www.healthysupplies.co.uk/cached/1632979161/pics/550x733/organic-dates-sussex-wholefoods-new-cup.webp" alt="Áo sơ mi" class="product-image">
+                        <div class="product-description">
+                            Áo sơ mi cổ vest basic tay lỡ form rộng unisex<br>
+                            <span>Loại: Cổ Vest Trơn : Đen,...</span>
+                        </div>
+                    </td>
+                    <td class="product-price">₫89.000</td>
+                    <td class="product-quantity">1</td>
+                    <td class="product-total">₫89.000</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ship grid">
+            <div class="row">
+                <div class="col l-5">
+                    <div class="note">
+                        <p >Lời nhắn</p>
+                        <input type="text" id="note" placeholder="Lưu ý cho Người bán...">
                     </div>
                 </div>
-
-                <div class="contain__form-label mg-top-32">
-                    <div class="contain__form-items">
-                        <select name="selectOption" id="selectOption">
-                            <option value="">Select Service Type</option>
-                            <option value="Gardening">Gardening</option>
-                            <option value="Landscaping">Landscaping</option>
-                            <option value="Vegetables Growing">Vegetables Growing</option>
-                            <option value="Land Preparation">Land Preparation</option>
-                        </select>
+            
+                <div class="col l-7">
+                    <div class="shipping-method">
+                        <div>
+                            <span>Phương thức vận chuyển:</span> <span class="method-name">Nhanh</span> <a href="#" class="change-link">Thay Đổi</a>
+                            <div class="method-info">
+                                Đảm bảo nhận hàng từ 14 Tháng 11 - 15 Tháng 11<br>
+                                Nhận Voucher trị giá ₫15.000 nếu đơn hàng được giao đến bạn sau ngày 15 Tháng 11
+                            </div>
+                        </div>
+                        <div class="price">₫16.500</div>
                     </div>
-                    <div class="contain__form-items">
-                        <input class="contain__form-items-input" type="" placeholder="Enter phone number">
-                        <div class="contain__form-icon"><i class="fa-solid fa-phone"></i></div>
-                    </div>
-                </div>
                 
-                <div class="contain__form-text">
-                    <textarea name="massage" id="massage" placeholder="Enter massage"></textarea>
+                
+                    <div class="total">
+                        <span>Tổng số tiền (1 sản phẩm):</span>
+                        <span class="price">₫16.500</span>
+                    </div>
                 </div>
-
-                <div class="contain__form-checkbox">
-                    <input type="checkbox">
-                    <span>Save my name, email, and website in this browser for the next time I comment.</span>
-                </div>
-                <button class="contain__form-btn button primary-button">GET AN FREE SERVICE</button>
             </div>
         </div>
+        <div class="payment-method">
+            <div class="payment__header">
+                <p>
+                    <span>Phương thức thanh toán:</span> 
+                    <span class="payment-type">Thanh toán khi nhận hàng</span> 
+                </p>
+                <a href="#" class="change-link">Thay Đổi</a>
+            </div>
+            <div class="summary">
+              <div class="summary__row">
+                <span>Tổng tiền hàng</span>
+                <span>₫89.000</span>
+              </div>
+              <div class="summary__row">
+                <span>Tổng tiền phí vận chuyển</span>
+                <span>₫16.500</span>
+              </div>
+              <div class="summary__row total">
+                <span>Tổng thanh toán</span>
+                <span>₫105.500</span>
+              </div>
+            </div>
+            <div class="payment__footer">
+                <p class="note">
+                    Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo
+                    <a href="#">Điều khoản của chúng tôi</a>
+                </p>
+                <button class="order-button">Đặt hàng</button>
+            </div>
+          </div>
     </div>
 
     <div class="footer">
