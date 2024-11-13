@@ -11,7 +11,7 @@ Văn
 - checkout page -> đợi Tân
 - model view -> đợi Tân
 - nút mua ngay cái đếm ngược deal -> ok
-- chưa autoplay được cái slide
+- chưa autoplay được cái slide -> ok
 
 
 
