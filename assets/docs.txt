@@ -18,10 +18,10 @@ Văn
 
 
 Tân
-- trang sản phẩm -> hard
-- trang account
-- card page
+- trang sản phẩm -> hard --> ok
+- trang account --> ok
+- card page --> ok
 - wishlist page
 - model card
-- mấy cái button của header chưa xử lý xong
+- mấy cái button của header chưa xử lý xong --> ok
 
