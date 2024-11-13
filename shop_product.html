@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshfruits</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Rajdhani:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- framework -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.6.0-web/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/shop_product.css">
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="header grid">
+        <div class="header__banner">
+            <div class="grid wide header__container ">
+                <a href="" class="header__logo">
+                    <img class="header__logo-img" src="./assets/image/freshfruits-logo.png" alt="">
+                    <div class="header__logo-text">FRESHFRUITS</div>
+                </a>
+        
+                <div class="header__main">
+                    <div class="header__navbar">
+                        <div class="header__navbar-items">
+                            <a href="/#" class="header__navbar-items-link">Trang Chủ</a>
+                            <a href="./about.html" class="header__navbar-items-link">Giới Thiệu</a>
+                            <a href="./shop.html" class="header__navbar-items-link">Sản Phẩm</a>
+                            <a href="./contact.html" class="header__navbar-items-link">Liên Hệ</a>
+                            <a href="./blog.html" class="header__navbar-items-link header__navbar-items-link--select">Tin Tức</a>
+                            <a href="" class="header__navbar-items-link">Thư Viện</a>
+                        </div>
+                    </div>
+        
+                    <div class="header__actions">
+                        <button class="header__button button primary-button">LIÊN HỆ</button>
+                        <div class="header__actions-container">
+                            <div class="header__actions-container-search">
+                                <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></a>
+                            </div>
+                            <div class="header__actions-container-user">
+                                <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path></svg></a>
+                            </div>
+                            <div class="header__actions-container-cart">
+                                <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="header__banner-text grid wide">
+                <div class="header__title">
+                    <div class="header__title-caption">Welcome to our company</div>
+                    <div class="header__title-main">Shop</div>
+                </div>
+                <div class="header__path">
+                    <div class="header__path-text border-right">Home</div>
+                    <div class="header__path-text border-right">Shop</div>
+                    <div class="header__path-text path-select">1</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- contain -->
+    <div class="contain">
+        <div class="contain__main">
+            <div class="contain__container">   
+                <!-- Khối thứ 1 chiếm 66,6667% -->
+                 <div class="contain__blog  grid-col-8">
+                    <div class="contain__items">
+                        <div class="contain__items-shop">
+                            <div class="splide" id="contain-slide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fapple-gala01.webp?alt=media&token=24d12d68-a95f-4f07-9387-68626f1951e5" alt="" class="splide__slide-image">
+                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fapple-gala03.jpg?alt=media&token=ffcd9844-6cb9-4c9e-a821-4cb22da47904" alt="" class="splide__slide-image">
+                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fapple-gala02.jpg?alt=media&token=053ee620-f4e2-4344-9648-28b82d75f771" alt="" class="splide__slide-image">  
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="splide" id="contain-thumbnail">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fapple-gala01.webp?alt=media&token=24d12d68-a95f-4f07-9387-68626f1951e5" alt="" class="splide__slide-image">
+                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fapple-gala03.jpg?alt=media&token=ffcd9844-6cb9-4c9e-a821-4cb22da47904" alt="" class="splide__slide-image">
+                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fapple-gala02.jpg?alt=media&token=053ee620-f4e2-4344-9648-28b82d75f771" alt="" class="splide__slide-image">  
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="contain__items-info">
+                            <div class="contain__items-info-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <span class="contain__items-info-quantily">(122)</span>
+                                </div>
+                                <div class="contain__items-info-title">Royal Gala Apples x5</div>
+                                <div class="contain__items-price border-bottom">
+                                    <div class="contain__items-price-new">$1.5</div>
+                                    <div class="contain__items-price-old">$1.99</div>
+                                </div>
+                                <div class="contain__items-categories border-bottom">
+                                    <span>Categories:</span>
+                                    <a href="" class="contain__items-tag">#Fruits</a>
+                                </div>
+                                <div class="contain__items-button">
+                                    <div class="contain__items-button-quantily">
+                                        <button class="contain__items-button-prev"><i class="fa-solid fa-minus"></i></button>
+                                        <div class="contain__items-button-multi">1</div>
+                                        <button class="contain__items-button-prev"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    
+                                    <button class="contain__items-button-main button primary-button">ADD TO CART</button>
+                                </div>
+
+                                <div class="contain__items-wishlist border-bottom">
+                                    <button class="fa-regular fa-heart"></button>
+                                    <span>Add to Wishlist</span>
+                                </div>
+
+                                <div class="contain__items-share border-bottom">
+                                    <span>Share:</span>
+                                    <div class="contain__info-link">
+                                        <a href="" class="contain__info-media"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="" class="contain__info-media"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="" class="contain__info-media"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="" class="contain__info-media"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="contain__items-ship">
+                                    <span class="contain__items-ship-title">Service Standards:</span>
+                                    <div class="contain__items-ship-content">
+                                        <div class="contain__items-ship-container">
+                                            <img src="./assets/image/shop-img/delivery-truck.png" alt="">
+                                            Delivery within the city in 2 to 4 hours.
+                                        </div>
+                                        <div class="contain__items-ship-container">
+                                            <img src="./assets/image/shop-img/medal.png" alt="">
+                                            Returns accepted within 48 hours if the product does not meet quality standards.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contain__tab-container">
+                        <div class="contain__tab-link active" onclick="openTab('description')">Description</div>
+                        <div class="contain__tab-link" onclick="openTab('reviews')">Reviews</div>
+                    </div>
+                    
+                    <div id="description" class="contain__tab-content active">
+                        <p class="contain__tab-content-title">Some advantage features of this product</p>
+                        <p class="contain__tab-content-sub">
+                            Royal Gala apples are a delicious, fresh variety known for their sweet and crisp taste, making them a popular choice for snacking, baking, and adding to salads. These apples have a striking red-orange color with hints of yellow, adding visual appeal along with their exceptional flavor. Grown under strict standards to ensure freshness and quality, each apple is carefully selected to meet high cleanliness and safety standards.</p>
+                    </div>
+                    
+                    <div id="reviews" class="contain__tab-content">
+                        <p class="contain__tab-content-title">Customer Reviews</p>
+                        <div class="contain__tab-reviews border-bottom">
+                            <img src="https://down-bs-vn.img.susercontent.com/7c77b2c193362ff5ecd7eed4f9a994b1_tn.webp" alt="" class="contain__tab-reviews-avatar">
+                            <div class="contain__tab-reviews-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="contain__tab-reviews-name">fuonganh2007</div>
+                                <div class="contain__tab-reviews-date">21:42 13-07-2024</div>
+                                <div class="contain__tab-reviews-content">Lần đầu đặt trái cây bên shop , mình đặt cherry và nho xanh autumn, cherry thì so với giá ok hơn, nho thì trái hơi nhỏ . Shop gói màng co quanh hợp rất ok. Good !</div>
+                                <div class="contain__tab-reviews-img">
+                                    <div class="contain__tab-reviews-illu">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134103-7r98o-lqyl8isr5k90cc.webp" alt="">
+                                    </div>
+    
+                                    <div class="contain__tab-reviews-illu">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134103-7r98o-llom5r8vhhi7a7.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contain__tab-reviews border-bottom">
+                            <img src="https://down-vn.img.susercontent.com/file/a72be3885921b938cd2d9d054ef15bec_tn" alt="" class="contain__tab-reviews-avatar">
+                            <div class="contain__tab-reviews-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="contain__tab-reviews-name">kimdung_74</div>
+                                <div class="contain__tab-reviews-date">09:27 01-04-2024</div>
+                                <div class="contain__tab-reviews-content">Đúng táo Nam Phi giòn, ngọt, hơi chua rất thơm ngon. Giá rẻ hơn shop khác. Cám ơn shop đóng gói sản phẩm cẩn thận, giao hàng hỏa tốc. Sipper thân thiện. Sẽ tiếp tục ủng hộ sản phẩm của shop.</div>
+                                <div class="contain__tab-reviews-img">
+                                    <div class="contain__tab-reviews-illu">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134103-22090-xx01rtlv14gv28.webp" alt="">
+                                    </div>
+    
+                                    <div class="contain__tab-reviews-illu">
+                                        <img src="https://down-vn.img.susercontent.com/file/vn-11134103-7ras8-m15mb3tsdvga0e.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contain__tab-button">
+                            <button class="contain__tab-button-main button">VIEW ALL</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Khối thứ 2 chiếm 33,333% -->
+                <div class="contain__sidebar grid-col-4">
+                    <div class="contain__info">
+                        <span class="contain__info-heading">
+                            <div class="contain__info-icon"><i class="fa-solid fa-bars"></i></div>
+                            <div class="contain__info-text">Top Rated Product</div>
+                        </span>
+                        
+                        <div class="contain__info-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/lottie_shaw_mince_pies_1000x.jpg?v=1639650334" alt="" class="contain__info-content-img">
+                            <div class="contain__info-content-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href="" class="contain__info-content-title">Lottie Shaw's - Traditional Christmas Mince Pies 245g</a>
+                                <div class="contain__info-price">
+                                    <div class="contain__info-price-new">$1.5</div>
+                                    <div class="contain__info-price-old">$1.99</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contain__info-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/lottie_shaw_mince_pies_1000x.jpg?v=1639650334" alt="" class="contain__info-content-img">
+                            <div class="contain__info-content-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href="" class="contain__info-content-title">Lottie Shaw's - Traditional Christmas Mince Pies 245g</a>
+                                <div class="contain__info-price">
+                                    <div class="contain__info-price-new">$1.5</div>
+                                    <div class="contain__info-price-old">$1.99</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contain__info-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/lottie_shaw_mince_pies_1000x.jpg?v=1639650334" alt="" class="contain__info-content-img">
+                            <div class="contain__info-content-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href="" class="contain__info-content-title">Lottie Shaw's - Traditional Christmas Mince Pies 245g</a>
+                                <div class="contain__info-price">
+                                    <div class="contain__info-price-new">$1.5</div>
+                                    <div class="contain__info-price-old">$1.99</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contain__info-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/lottie_shaw_mince_pies_1000x.jpg?v=1639650334" alt="" class="contain__info-content-img">
+                            <div class="contain__info-content-text">
+                                <div class="contain__items-info-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href="" class="contain__info-content-title">Lottie Shaw's - Traditional Christmas Mince Pies 245g</a>
+                                <div class="contain__info-price">
+                                    <div class="contain__info-price-new">$1.5</div>
+                                    <div class="contain__info-price-old">$1.99</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="contain__discount-scene bg-orange">
+                        <div class="contain__discount-main">
+                            <div class="contain__discount-text">
+                                <div class="contain__discount-text-suppertitle">HOT SALES</div>
+                                <div class="contain__discount-text-title">Big Sale</div>
+                                <div class="contain__discount-text-description">Mango & Juci</div>
+                                <button class="contain__discount-btn button">
+                                    Buy Now
+                                    <svg style="margin-left: 8px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></g></svg>
+                                </button>
+                            </div>
+                            <div class="contain__discount-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/promotion%2Forange.png?alt=media&token=f32b8380-bf79-4af8-9b01-717692fcb300" alt="" class="contain__discount-img-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contain__product">
+                <div class="contain__product-heading">Related Product</div>
+                
+                <div class="splide" id="products-content">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="products__container-items">
+                                    <a href="" class="products__container-items-link">
+                                        <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                        <span class="products__container-items-label">new</span>
+                                        <div class="products__container-items-icon">
+                                            <button class="products__btn">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="products__container-items-info">
+                                        <div class="products__container-items-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="products__container-items-quantily">(69)</span>
+                                        </div>
+                                        <div class="products__container-items-title">
+                                            <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                        </div>
+                                        <div class="products__container-items-sprices">
+                                            <div class="products__container-items-sprices-new">$2</div>
+                                            <div class="products__container-items-sprices-old">$2.69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__container-items">
+                                    <a href="" class="products__container-items-link">
+                                        <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                        <span class="products__container-items-label">new</span>
+                                        <div class="products__container-items-icon">
+                                            <button class="products__btn">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="products__container-items-info">
+                                        <div class="products__container-items-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="products__container-items-quantily">(69)</span>
+                                        </div>
+                                        <div class="products__container-items-title">
+                                            <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                        </div>
+                                        <div class="products__container-items-sprices">
+                                            <div class="products__container-items-sprices-new">$2</div>
+                                            <div class="products__container-items-sprices-old">$2.69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide">
+                                <div class="products__container-items">
+                                    <a href="" class="products__container-items-link">
+                                        <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                        <span class="products__container-items-label">new</span>
+                                        <div class="products__container-items-icon">
+                                            <button class="products__btn">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="products__container-items-info">
+                                        <div class="products__container-items-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="products__container-items-quantily">(69)</span>
+                                        </div>
+                                        <div class="products__container-items-title">
+                                            <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                        </div>
+                                        <div class="products__container-items-sprices">
+                                            <div class="products__container-items-sprices-new">$2</div>
+                                            <div class="products__container-items-sprices-old">$2.69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide">
+                                <div class="products__container-items">
+                                    <a href="" class="products__container-items-link">
+                                        <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                        <span class="products__container-items-label">new</span>
+                                        <div class="products__container-items-icon">
+                                            <button class="products__btn">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="products__container-items-info">
+                                        <div class="products__container-items-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="products__container-items-quantily">(69)</span>
+                                        </div>
+                                        <div class="products__container-items-title">
+                                            <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                        </div>
+                                        <div class="products__container-items-sprices">
+                                            <div class="products__container-items-sprices-new">$2</div>
+                                            <div class="products__container-items-sprices-old">$2.69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide">
+                                <div class="products__container-items">
+                                    <a href="" class="products__container-items-link">
+                                        <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                        <span class="products__container-items-label">new</span>
+                                        <div class="products__container-items-icon">
+                                            <button class="products__btn">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="products__container-items-info">
+                                        <div class="products__container-items-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="products__container-items-quantily">(69)</span>
+                                        </div>
+                                        <div class="products__container-items-title">
+                                            <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                        </div>
+                                        <div class="products__container-items-sprices">
+                                            <div class="products__container-items-sprices-new">$2</div>
+                                            <div class="products__container-items-sprices-old">$2.69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="splide__slide">
+                                <div class="products__container-items">
+                                    <a href="" class="products__container-items-link">
+                                        <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="" class="products__container-items-img">
+                                        <span class="products__container-items-label">new</span>
+                                        <div class="products__container-items-icon">
+                                            <button class="products__btn">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button class="products__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="products__container-items-info">
+                                        <div class="products__container-items-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="products__container-items-quantily">(69)</span>
+                                        </div>
+                                        <div class="products__container-items-title">
+                                            <a href="" class="products__container-items-title-link">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</a>
+                                        </div>
+                                        <div class="products__container-items-sprices">
+                                            <div class="products__container-items-sprices-new">$2</div>
+                                            <div class="products__container-items-sprices-old">$2.69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <!-- footer-contain -->
+        <div class="footer__contain">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-3">
+                        <img src="./assets/image/freshfruits-logo.png" alt="" class="footer__logo">
+                        <p class="footer__descr">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span style="margin-left: 10px;">London, United Kingdom</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <span style="margin-left: 10px;">+0123-456789</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span style="margin-left: 10px;">example@gmailm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer__item--title">Company</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Locations Map</a>
+                            </li>   
+                        </ul>
+                    </div>
+                    
+                    <div class="col l-2">
+                        <div class="footer__item--title">Services</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Order tracking</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Promotional Offers</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer__item--title">Customer Care</div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Sign in</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Register</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">My Account</a>
+                            </li>   
+                            <li class="footer__item">
+                                <a href="" class="footer__item--link">Wishlist</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <div class="footer__item--title">newsletter</div>
+                        <p class="footer__descr">Subscribe to our weekly Newsletter and receive updates via email.</p>
+                        <div class="email-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="footer__copyright">
+            <div class="copyright--left">
+                <p class="copyright--text">All Rights Reserved @ Company 2023</p.co>
+            </div>
+            <div class="copyright--right">
+                <p class="copyright--text">Terms & Conditions</p>
+                <p class="copyright--text">Claim</p>
+                <p class="copyright--text">Privacy & Policy</p>
+            </div>
+        </div>
+
+        <!-- footer rise -->
+        <div class="footer__rise">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-1.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Curated Products</div>
+                                <p class="rise__item--descr">Provide Curated Products for all product over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-2.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Handmade</div>
+                                <p class="rise__item--descr">We ensure the product quality that is our main goal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-3.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Natural Food</div>
+                                <p class="rise__item--descr">Return product within 3 days for any product you buy
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 footer__border-right--item">
+                        <div class="footer__rise--item">
+                            <div class="rise__item--img">
+                                <img src="./assets/image/footer-img/rise-item-4.png" alt="image">
+                            </div>
+                            <div class="rise__item--content">
+                                <div class="rise__item--title">Free home delivery</div>
+                                <p class="rise__item--descr">We ensure the product quality that you can trust easily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- addCard-->
+    <button id="addCard" ><i class="fa-solid fa-cart-shopping"></i></button>
+
+    <!-- scroll-to-top -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./assets/js/shopPage/illustration.js"></script>
+    <script src="./assets/js/scrollToTop.js"></script>
+    <script src="./assets/js/scrollToShowButton.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+</html>

@@ -108,6 +108,16 @@ button.big-button.primary-button {
     gap: 32px;
 }
 
+.border-right{
+    border: 0 solid #8cb2b2;
+    border-right-width: 2px;
+}
+
+.border-bottom{
+    border: 0 solid #e5e7eb;
+    border-bottom-width: 1px;
+}
+
 /* scroll to top */
 /* Add cart button */
 #addCard, #scrollTopBtn {

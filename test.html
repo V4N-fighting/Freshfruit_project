@@ -1,87 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./test.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Gala Apples</title>
+  <link rel="stylesheet" href="./test.css"> 
 </head>
 <body>
-    <div class="contain__main">
-        <div class="contain__container">
-            <!-- Khối thứ nhất chiếm 33,333% -->
-            
-            
-            <!-- Khối thứ hai chiếm 66,6667% -->
-            <div class="contain__container-items l-8">
-                <!-- Khối con 1 chiếm 50% của khối thứ hai -->
-                <div class="card">
-                    <a  href="" class="card__link">
-                        <div class="card__image">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
-                        </div>
-                    </a>
-                    <div class="card__content">
-                        <div class="tags">
-                            <span class="tag">vegetable garden</span>
-                            <span class="tag">tips</span>
-                        </div>
-                        <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
-                        <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
-                
-                        <div class="card__footer">
-                            <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
-                            <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <a  href="" class="card__link">
-                        <div class="card__image">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
-                        </div>
-                    </a>
-                    <div class="card__content">
-                        <div class="tags">
-                            <span class="tag">vegetable garden</span>
-                            <span class="tag">tips</span>
-                        </div>
-                        <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
-                        <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
-                
-                        <div class="card__footer">
-                            <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
-                            <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a  href="" class="card__link">
-                        <div class="card__image">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
-                        </div>
-                    </a>
-                    <div class="card__content">
-                        <div class="tags">
-                            <span class="tag">vegetable garden</span>
-                            <span class="tag">tips</span>
-                        </div>
-                        <a href="#" class="card__title">5 Most Important Weight Loss Fruits.</a>
-                        <p class="card__text">Trái cây gần như luôn luôn tươi ngọt và mọng nước, màu sắc trái cây là điểm nhân giúp hấp dẫn người dùng đến với hương vị ngọt ngào</p>
-                
-                        <div class="card__footer">
-                            <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
-                            <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-items l-4">
-                <div class="text">Khối 1 (33,333%)</div>
-            </div>
-        </div>
+    <div class="tab-container">
+        <div class="tab-link active" onclick="openTab('description')">Description</div>
+        <div class="tab-link" onclick="openTab('reviews')">Reviews</div>
     </div>
+    
+    <div id="description" class="tab-content active">
+        <h3>Some advantage features of this product</h3>
+        <p>Royal Gala apples are called royal for a reason. Their reign as a succulent, delicious, juicy and crunchy apple is supreme. With plenty of nutritional value, these apples don’t just make a great snack, they also provide your body with some excellent benefits.</p>
+    </div>
+    
+    <div id="reviews" class="tab-content">
+        <h3>Customer Reviews</h3>
+        <p>Here you can display customer reviews, ratings, or comments about the product.</p>
+    </div>
+    
+<script src="./test.js"></script>
 </body>
 </html>
