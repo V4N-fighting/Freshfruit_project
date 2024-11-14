@@ -1,17 +1,20 @@
-function openTab(tabName) {
-    // Ẩn tất cả các nội dung tab
-    var tabContents = document.getElementsByClassName("tab-content");
-    for (var i = 0; i < tabContents.length; i++) {
-        tabContents[i].classList.remove("active");
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    const searchContainer = document.querySelector(".header__actions-container-search");
+    const searchIcon = searchContainer.querySelector("i");
+    const searchBox = searchContainer.querySelector(".search-box");
 
-    // Xóa trạng thái active khỏi tất cả các nút tab
-    var tabLinks = document.getElementsByClassName("tab-link");
-    for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-    }
+    searchContainer.addEventListener("click", function (event) {
+        event.preventDefault(); // Ngăn hành động mặc định của thẻ a
 
-    // Hiển thị tab được chọn và đặt trạng thái active cho nút của nó
-    document.getElementById(tabName).classList.add("active");
-    event.currentTarget.classList.add("active");
-}
+        // Kiểm tra trạng thái của ô tìm kiếm và thay đổi hiển thị
+        if (searchBox.style.display === "none") {
+            searchBox.style.display = "block";
+            searchIcon.classList.remove("fa-magnifying-glass");
+            searchIcon.classList.add("fa-xmark");
+        } else {
+            searchBox.style.display = "none";
+            searchIcon.classList.remove("fa-xmark");
+            searchIcon.classList.add("fa-magnifying-glass");
+        }
+    });
+});

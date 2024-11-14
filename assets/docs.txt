@@ -21,7 +21,7 @@ Tân
 - trang sản phẩm -> hard --> ok
 - trang account --> ok
 - card page --> ok
-- wishlist page
-- model card
+- wishlist page --> ok
+- model card --> ok
 - mấy cái button của header chưa xử lý xong --> ok
 

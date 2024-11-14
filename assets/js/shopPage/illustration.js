@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gap: 30,
             rewind : true,
             pagination: false
-          } );
+        } );
           
         splide.mount();        
 
