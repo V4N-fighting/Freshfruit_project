@@ -1,27 +1,3 @@
-Các vấn đề cần phải giải quyết:
-
-
-
-Thiếu:
-
-Văn
-- trang blog bài viết -> ok
-- thiếu trang register -> ok
-- thiếu trang sign in -> ok
-- checkout page -> ok
-- model view ->  -> ok
-- nút mua ngay cái đếm ngược deal -> ok
-- chưa autoplay được cái slide -> ok
-
-
-- thiếu trang đơn hàng
-
-
-Tân
-- trang sản phẩm -> hard --> ok
-- trang account --> ok
-- card page --> ok
-- wishlist page --> ok
-- model card --> ok
-- mấy cái button của header chưa xử lý xong --> ok
-
+header.php -> ok
+profile -> ok
+login, register, logout -> ok NHƯNG nhấn nút back của trình duyệt thì lỗi "VẪN HIỂN THỊ DATA CỦA NGƯỜI DÙNG"

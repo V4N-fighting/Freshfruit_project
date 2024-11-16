@@ -684,7 +684,7 @@ button.banner__button-left{
 }
 
 
-.products__navbar-items-link{
+.products__navbar-items-link a{
     font-size: 2rem;
     line-height: 28px;
     font-weight: 500;
@@ -693,6 +693,7 @@ button.banner__button-left{
     letter-spacing: .8px;
     cursor: pointer;
     position: relative;
+    text-transform: uppercase;
 }
 
 
