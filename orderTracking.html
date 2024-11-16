@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./assets/css/orderTracking.css">
 
     
 </head>
@@ -161,36 +161,83 @@
                     </div>
 
                     <ul class="contain__sidebar-list">
-                        <li><a href="#" class="contain__sidebar-items">Personal information</a></li>
-                        <li><a href="#" class="contain__sidebar-items">Billing & Payments</a></li>
-                        <li><a href="#" class="contain__sidebar-items">Order History</a></li>
-                        <li><a href="#" class="contain__sidebar-items">Gift Cards</a></li>
+                        <li><a href="" class="contain__sidebar-items">Personal information</a></li>
+                        <li><a href="" class="contain__sidebar-items">Billing & Payments</a></li>
+                        <li><a href="" class="contain__sidebar-items items-select">Order History</a></li>
+                        <li><a href="" class="contain__sidebar-items">Gift Cards</a></li>
                     </ul>
 
                 </div>
                 <div class="contain__content grid-col-8">
-                    <div id="content-personal-info" class="contain__content-text">
-                        <div class="contain__content-heading">Personal information</div>
-                        <div class="contain__content-description">Manage your personal information, including phone numbers and email address where you can be contacted</div>
+                    <div class="contain__content-text">
+                        <!-- <div class="contain__content-heading border-bottom">Đơn hàng</div> -->
                     </div>
-                    <div id="content-billing" class="contain__content-text" style="display:none;">
-                        <div class="contain__content-heading">Billing & Payments</div>
-                        <div class="contain__content-description">View and manage your billing and payment methods.</div>
+
+                    <div class="contain__content-navbar">
+                        <a href="" class="contain__content-navbar-items navbar-items-select">Tất cả</a>
+                        <a href="" class="contain__content-navbar-items">Đơn hàng mới</a>
+                        <a href="" class="contain__content-navbar-items">Đang vận chuyển</a>
+                        <a href="" class="contain__content-navbar-items">Hoàn thành</a>
+                        <a href="" class="contain__content-navbar-items">Hoàn trả</a>
                     </div>
-                    <div id="content-order-history" class="contain__content-text" style="display:none;">
-                        <div class="contain__content-heading">Order History</div>
-                        <div class="contain__content-description">Track and manage your past orders.</div>
-                    </div>
-                    <div id="content-gift-cards" class="contain__content-text" style="display:none;">
-                        <div class="contain__content-heading">Gift Cards</div>
-                        <div class="contain__content-description">Manage and redeem your gift cards.</div>
+
+                    <div class="contain__content-order border-bottom">
+                        <div class="contain__order-items">
+                            <span class="orderId">Order ID: 280504<i class="fa-solid fa-angle-right" style="margin-left: 12px; color: #cbcdd0;"></i>
+                            </span>
+                            <span class="orderStatus">Đơn hàng đã hoàn tất</span>
+                    
+                        </div>
+                        <div class="contain__order-tracking">
+                            <i class="fa-solid fa-truck contain__order-tracking-icon"></i>
+                            <div class="contain__order-scene">
+                                <span>Oct 30 Đã giao</span>
+                                <p>Kiện hàng của bạn đã được giao</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right contain__order-tracking-next"></i>
+                        </div>
+
+                        <div class="contain__order-info border-bottom">
+                            <div class="contain__order-info-img">
+                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/258_1000x.jpg?v=1634483572" alt="">
+                            </div>
+                            <div class="contain__order-info-text">
+                                <div class="contain__order-info-title">Billington's - Barista Crystals For Coffee With Delicate Caramel Notes 400g</div>
+                                <div class="contain__order-info-multi">
+                                    <div class="contain__order-info-sprice">$2.00</div>
+                                    <div class="contain__order-info-quantity">x1</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="contain__order-info border-bottom">
+                            <div class="contain__order-info-img">
+                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="">
+                            </div>
+                            <div class="contain__order-info-text">
+                                <div class="contain__order-info-title">Aspall - Classic Red Wine Vinegar 350ml</div>
+                                <div class="contain__order-info-multi">
+                                    <div class="contain__order-info-sprice">$2.00</div>
+                                    <div class="contain__order-info-quantity">x1</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="contain__order-total">
+                            <span>2 items:</span>
+                            <p>$4.00</p>
+                        </div>
+                        <div class="contain__order-button">
+                            <button class="contain__order-btn-return button">Mua lại</button>
+                            <button class="contain__order-btn-rating button primary-button">Viết đánh giá</button>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
-    
 
     <div class="footer">
         <!-- footer-contain -->
@@ -350,8 +397,8 @@
     <!-- scroll-to-top -->
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-    
-    <script src="./test.js"></script>
+
+    <script src="./assets/js/onClick.js"></script>
     <script src="./assets/js/scrollToTop.js"></script>
     <script src="./assets/js/scrollToShowButton.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
