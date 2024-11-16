@@ -46,14 +46,81 @@
                     <div class="header__actions">
                         <button class="header__button button primary-button">LIÊN HỆ</button>
                         <div class="header__actions-container">
-                            <div class="header__actions-container-search">
-                                <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></a>
+                            <div class="relative">
+                                <div class="header__actions-container-search">
+                                    <a class="header__actions-container-search-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    
+                                </div>
+                                <div class="search-box">
+                                    <div class="search-box-content">
+                                        <input class="search-input" type="text" placeholder="Enter your name">
+                                        <div class="search-input-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="header__actions-container-user">
-                                <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path></svg></a>
+                            <div class="header__actions-container-user relative">
+                                <a class="header__actions-container-search-link" href=""><i class="fa-solid fa-user"></i></a>
+                                <div class="header__actions-user-list">
+                                    <a href="./login.html" class="header__actions-user-items">Sign in</a>
+                                    <a href="./register.html" class="header__actions-user-items">Register</a>
+                                    <a href="./profile.html" class="header__actions-user-items">My Account</a>
+                                    <a href="./wishlist.html" class="header__actions-user-items">Wishlist</a>
+                                </div>
                             </div>
                             <div class="header__actions-container-cart">
-                                <a class="header__actions-container-search-link" href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg></a>
+                                <a class="header__actions-container-search-link" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+    
+                            <div class="model__cart">
+                                <div class="model__cart-view">
+                                    <div class="model__cart-header border-bottom">
+                                        <div class="model__cart-heading">Cart</div>
+                                        <a href="" class="model__cart-close"><i class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <div class="model__cart-scroll">
+                                        <div class="model__cart-items">
+                                            <button class="model__cart-items-close"><i class="fa-solid fa-xmark"></i></button>
+                                            <div class="model__cart-items-img">
+                                                <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nav/nav00089/y/12.jpg" alt="">
+                                            </div>
+                                            <div class="model__cart-items-text">
+                                                <div class="model__cart-items-title">Organic Golden Berries (227g)</div>
+                                                <div class="model__cart-items-sprice">1 x $9.30</div>
+                                            </div>
+                                        </div>
+                                        <div class="model__cart-items">
+                                            <button class="model__cart-items-close"><i class="fa-solid fa-xmark"></i></button>
+                                            <div class="model__cart-items-img">
+                                                <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/products%2Fdrink%2Fdrink2.webp?alt=media&token=893e0261-7cb1-412b-be4b-6b8023c9f9a0" alt="">
+                                            </div>
+                                            <div class="model__cart-items-text">
+                                                <div class="model__cart-items-title">Johnnie Walker Blue Label Ghost and Rare Port Dundas Scotch Whisky 70cl</div>
+                                                <div class="model__cart-items-sprice">1 x $8.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="model__cart-items">
+                                            <button class="model__cart-items-close"><i class="fa-solid fa-xmark"></i></button>
+                                            <div class="model__cart-items-img">
+                                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/TheOriginal-900900whitebakground_edited_1000x.jpg?v=1637149030" alt="">
+                                            </div>
+                                            <div class="model__cart-items-text">
+                                                <div class="model__cart-items-title">Forged In Wakefield - The Original Gin 37.5% Abv 70cl</div>
+                                                <div class="model__cart-items-sprice">1 x $3.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="model__cart-total">
+                                        <span class="model__cart-total-text">Subtotal:</span>
+                                        <span class="model__cart-total-spice">$20.30</span>
+                                    </div>
+    
+                                    <div class="model__cart-button">
+                                        <button class="model__cart-button-main button primary-button">VIEW CARD</button>
+                                        <button class="model__cart-button-main button">CHECKOUT</button>
+                                    </div>
+                                    <div class="model__cart-notify"><i class="fa-solid fa-truck" style="color: var(--primary-color); margin-right: 12px;"></i>Free shipping on All Orders Over $100!</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -268,7 +335,7 @@
          </div>
     </div>
 
-
+    <script src="./assets/js/onClick.js"></script>
     <script src="./assets/js/validate/validator.js"></script>
     <script src="./assets/js/actions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>

@@ -176,6 +176,10 @@ button.big-button.primary-button {
     width: 66.66667%;
 }
 
+.relative{
+    position: relative;
+}
+
 /* scroll to top */
 /* Add cart button */
 #addCard, #scrollTopBtn {

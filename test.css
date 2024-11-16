@@ -1,25 +1,36 @@
-.tab-container {
+
+.header__actions-container-cart,
+.header__actions-container-user,
+.header__actions-container-search{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin-left: 12px;
+    height: 40px;
+    width: 40px;
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.tab-link {
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #000;
+.header__actions-container-cart:hover,
+.header__actions-container-user:hover,
+.header__actions-container-search:hover{
+    background-color: var(--primary-color);
 }
 
-.tab-link.active {
-    color: #7db230; /* Màu xanh lá như trong ảnh */
-    border-bottom: 2px solid #7db230;
+.header__actions-container-cart-link svg,
+.header__actions-container-user-link svg,
+.header__actions-container-search-link i{
+    line-height: 14px;
+    font-size: 12p  x;
+    color: var(--black-text-color);
+    fill: #000;
 }
 
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
+.search-box {
+    margin-top: 10px;
+    top : 40px;
+    left: 0;
+    position: absolute;
 }

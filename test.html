@@ -5,21 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Royal Gala Apples</title>
   <link rel="stylesheet" href="./test.css"> 
+  <!-- fontawesome icon -->
+  <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 <body>
-    <div class="tab-container">
-        <div class="tab-link active" onclick="openTab('description')">Description</div>
-        <div class="tab-link" onclick="openTab('reviews')">Reviews</div>
-    </div>
-    
-    <div id="description" class="tab-content active">
-        <h3>Some advantage features of this product</h3>
-        <p>Royal Gala apples are called royal for a reason. Their reign as a succulent, delicious, juicy and crunchy apple is supreme. With plenty of nutritional value, these apples don’t just make a great snack, they also provide your body with some excellent benefits.</p>
-    </div>
-    
-    <div id="reviews" class="tab-content">
-        <h3>Customer Reviews</h3>
-        <p>Here you can display customer reviews, ratings, or comments about the product.</p>
+    <div class="header__actions-container-search">
+        <a class="header__actions-container-search-link" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <div class="search-box" style="display: none;">
+            <!-- Đây là ô tìm kiếm -->
+            <input type="text" placeholder="Tìm kiếm...">
+        </div>
     </div>
     
 <script src="./test.js"></script>
