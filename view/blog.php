@@ -1,3 +1,27 @@
+<?php
+    $sd = 4;
+    $code = @mysqli_connect("localhost", "root", "") or die("Kết nối thất bại");
+        mysqli_select_db($code, "webtraicay_db") or die("Db không tồn tại");
+
+    // Thực hiện truy vấn lấy tất cả sản phẩm:
+    $sl = "select * from blog";
+    $kq = mysqli_query($code, $sl);
+    $tsp = mysqli_num_rows($kq);
+
+    // Tổng số trang:
+    $tst = ceil($tsp / $sd);
+
+    // Tính trang hiện hành:
+    if (isset($_GET['page'])) $page = $_GET['page']; else $page = 1;
+
+    // Tính vị trí lấy sản phẩm theo page:
+    $vt = ($page - 1) * $sd;
+
+    // Truy vấn lấy sản phẩm theo vị trí:
+    $sl2 = "select * from blog limit $vt, $sd";
+    $kq2 = mysqli_query($code, $sl2);
+
+?>
 <div class="contain">
         <div class="contain__main">
             <div class="contain__container">   
@@ -5,76 +29,57 @@
                  <div class="contain__blog  grid-col-8">
                     <div class="contain__items">
                         <!-- Khối con 1 chiếm 50% của khối thứ hai -->
-                        <div class="contain__card">
-                            <a  href="" class="contain__card-link">
-                                <div class="contain__card-image">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog1.webp?alt=media&token=0a3173d2-d18f-46b2-a705-a4bf2e2887e6" alt="Vegetable Garden">
-                                </div>
-                            </a>
-                            <div class="contain__card-content">
-                                <div class="contain__card-tags">
-                                    <a href="" class="tag-icon"><i class="fa-solid fa-tags"></i></a>
-                                    <a href="" class="tag">vegetable garden</a>
-                                </div>
-                                <a href="#" class="contain__card-title">Eat More Fresh Fruits<br>Every Day</a>
-                                <p class="contain__card-text">Climate change from winter or tropical India to the distant Himalayan Mountains provides endless diversity in India’s online fruit market. So, the next time you go to the market, check out some of the seasonal known fruits as well as some unfamiliar fruits and add them to your diet chart for your proper health!</p>
+                        <?php
+                            $i = 1;
+                            while ($d2 = mysqli_fetch_array($kq2)) {
+                                
+                        ?>
                         
-                                <div class="contain__card-footer">
-                                    <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
-                                    <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="contain__card">
-                            <a  href="" class="contain__card-link">
-                                <div class="contain__card-image">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog2.webp?alt=media&token=5abac526-4a0d-44e5-884f-aa078dcbed49" alt="Vegetable Garden">
-                                </div>
-                            </a>
-                            <div class="contain__card-content">
-                                <div class="contain__card-tags">
-                                    <a href="" class="tag-icon"><i class="fa-solid fa-tags"></i></a>
-                                    <a href="" class="tag">vegetable garden</a>
-                                    <a href="" class="tag">tips</a>
-                                </div>
-                                <a href="#" class="contain__card-title">5 Most Important Weight Loss Fruits.</a>
-                                <p class="contain__card-text">Fruit is nature’s ready-made snack filled with vitamins, fiber, and different vitamins that assist a healthful weight-reduction plan. There are many weight loss fruits one can eat.  Fruit is likewise typically low in energy and excessive in fiber, which might also additionally assist you to shed pounds.  Ingesting fruit is connected to a decreased frame weight and a decreased chance of diabetes, excessive blood pressure, cancer, and coronary heart disease.</p>
-                        
-                                <div class="contain__card-footer">
-                                    <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
-                                    <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contain__card">
-                            <a  href="" class="contain__card-link">
-                                <div class="contain__card-image">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/freshmeals-reactjs.appspot.com/o/blog%2Fblog3.webp?alt=media&token=39105e04-0a10-4f75-b0e6-8ffbf0fdadd4" alt="Vegetable Garden">
-                                </div>
-                            </a>
-                            <div class="contain__card-content">
-                                <div class="contain__card-tags">
-                                    <span class="tag-icon"><i class="fa-solid fa-tags"></i></span>
-                                    <a href="" class="tag">fruit garden</a>
-                                    <a href="" class="tag">tips</a>
-                                </div>
-                                <a href="#" class="contain__card-title">The Best Investment You Can Ever Make on Your Health</a>
-                                <p class="contain__card-text">Your health is the most profitable investment you can make. Invest in fresh fruits from Fruit Carro and get the most of the benefits.  While we have little control over what happens around us, and many environmental situations are unavoidable, we control the things we eat to fuel our bodies.  Investing in our health is critical, especially during a worldwide pandemic. Maintaining a nutrient-dense diet that best supports our immune system and overall well-being is part of that investment.</p>
-                        
-                                <div class="contain__card-footer">
-                                    <span class="author"><i class="fa-solid fa-user-pen"></i> by Admin</span>
-                                    <span class="date"><i class="fa-regular fa-calendar-days"></i> Nov 12, 2022</span>
-                                </div>
-                            </div>
-                        </div>  
+                        <?php 
+                        echo'<div class="contain__card">
+                                        <a  href="index.php?act=new_blog&id='.$d2['idBlog'].'" class="contain__card-link">
+                                            <div class="contain__card-image">
+                                                <img src="'.$d2['img'].'" alt="'.$d2['tieude'].'">
+                                            </div>
+                                        </a>
+                                        <div class="contain__card-content">
+                                            <div class="contain__card-tags">
+                                                <span class="tag-icon"><i class="fa-solid fa-tags"></i></span>';
+                                            foreach ($allblogtype as $blogtype) {
+                                                if ($blogtype['idBlogtype']==$d2['idBlogtype']) {
+                                                    echo '<span class="tag">'.$blogtype['tenloaiblog'].'</span>';
+                                                }
+                                            }
+                                            echo ' 
+                                                
+                                            </div>
+                                                    
+                                            <a href="#" class="contain__card-title">'.$d2['tieude'].'</a>
+                                            <p class="contain__card-text">'.$d2['noidung'].'</p>
+                                    
+                                            <div class="card__footer">
+                                                <span class="author"><i class="fa-solid fa-user-pen"></i> by '.$d2['tacgia'].'</span>
+                                                <span class="date"><i class="fa-regular fa-calendar-days"></i>'.$d2['created_at'].'</span>
+                                            </div>
+                                        </div>
+                                    </div>';
+                        ?>
+                        <?php } ?>
+                       
                     </div>
                     
                     <div class="pagination">
                         <button class="page-btn">Previous</button>
-                        <button class="page-btn active">1</button>
+                        <?php for ($i = 1; $i <= $tst; $i++) {
+                            if ($page == $i) {
+                                echo '<button class="page-btn active"><a href="index.php?act=blog&page='.$i.'">'.$i.'</a></button>';
+                            } else {
+                                echo '<button class="page-btn"><a href="index.php?act=blog&page='.$i.'">'.$i.'</a></button>';
+                            }
+                        } ?>
+                        <!-- <button class="page-btn active">1</button>
                         <button class="page-btn">2</button>
-                        <button class="page-btn">3</button>
+                        <button class="page-btn">3</button> -->
                         <button class="page-btn">Next</button>
                     </div>
                 </div>

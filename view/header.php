@@ -19,12 +19,18 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <?php
-        if (isset($_GET['act'])) {
-            $act = $_GET['act']; 
-            echo '<link rel="stylesheet" href="./assets/css/' . $act . '.css">';
+       if (isset($_GET['act']) && ($_GET['act'])) { 
+        $act = $_GET['act']; 
+        $file_path = './assets/css/' . $act . '.css';
+        if (file_exists($file_path)) {
+            echo '<link rel="stylesheet" href="' . $file_path . '">';
         } else {
             echo '<link rel="stylesheet" href="./assets/css/styles.css">';
         }
+    } else {
+        echo '<link rel="stylesheet" href="./assets/css/styles.css">';
+    }
+    
     ?>
 
     

@@ -1,3 +1,27 @@
+<?php
+    $sd = 6;
+    $code = @mysqli_connect("localhost", "root", "") or die("Kết nối thất bại");
+        mysqli_select_db($code, "webtraicay_db") or die("Db không tồn tại");
+
+    // Thực hiện truy vấn lấy tất cả sản phẩm:
+    $sl = "select * from product";
+    $kq = mysqli_query($code, $sl);
+    $tsp = mysqli_num_rows($kq);
+
+    // Tổng số trang:
+    $tst = ceil($tsp / $sd);
+
+    // Tính trang hiện hành:
+    if (isset($_GET['page'])) $page = $_GET['page']; else $page = 1;
+
+    // Tính vị trí lấy sản phẩm theo page:
+    $vt = ($page - 1) * $sd;
+
+    // Truy vấn lấy sản phẩm theo vị trí:
+    $sl2 = "select * from product limit $vt, $sd";
+    $kq2 = mysqli_query($code, $sl2);
+
+?>
 <div class="contain">
         <div class="grid wide">
             <div class="row">
@@ -14,236 +38,67 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col l-4">
-                                <div class="products__container-items">
-                            <a href="" class="products__container-items-link">
-                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
-                                <span class="products__container-items-label">new</span>
-                                <div class="products__container-items-icon">
-                                    <button class="products__btn">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </a>
-                            <div class="products__container-items-info">
-                                <div class="products__container-items-rating">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-regular fa-star"></i></span>
-                                    <span class="products__container-items-quantily">(122)</span>
-                                </div>
-                                <div class="products__container-items-title">
-                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
-                                </div>
-                                <div class="products__container-items-sprices">
-                                    <div class="products__container-items-sprices-new">$2</div>
-                                    <div class="products__container-items-sprices-old">$2.12</div>
-                                </div>
-                            </div>
+                            <?php
+                                $i = 1;
+                                while ($d2 = mysqli_fetch_array($kq2)) {
+                                    
+                            ?>
+                            
+                            <?php 
+                            echo'<div class="col l-4">
+                                    <div class="products__container-items">
+                                        <a href="" class="products__container-items-link">
+                                            <img src="'.$d2['img1'].'" alt="" class="products__container-items-img">
+                                            <span class="products__container-items-label">new</span>
+                                            <div class="products__container-items-icon">
+                                                <button class="products__btn">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button class="products__btn">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                </button>
+                                                <button class="products__btn">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </button>
+                                            </div>
+                                        </a>
+                                        <div class="products__container-items-info">
+                                            <div class="products__container-items-rating">';
+                                                for ($i = 0; $i < floor($d2['danhgia']); $i++) {
+                                                echo '<span><i class="fa-solid fa-star"></i></span>';
+                                                }
+                                                if ($d2['danhgia'] > floor($d2['danhgia'])) {
+                                                    echo '<span><i class="fa-solid fa-star-half"></i></span>';
+                                                }
+                                                echo'<span class="products__container-items-quantily">'.$d2['soluong'].'</span>
+                                            </div>
+                                            <div class="products__container-items-title">
+                                                <a href="" class="products__container-items-title-link">'.$d2['tensp'].'</a>
+                                            </div>
+                                            <div class="products__container-items-sprices">
+                                                <div class="products__container-items-sprices-new">'.$d2['gia'].'</div>
+                                                <div class="products__container-items-sprices-old">'.$d2['gia'].'</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>';
+                            ?>
+                            <?php } ?>
+                            
                         </div>
-                            </div>
-                            <div class="col l-4">
-                                <div class="products__container-items">
-                            <a href="" class="products__container-items-link">
-                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
-                                <span class="products__container-items-label">new</span>
-                                <div class="products__container-items-icon">
-                                    <button class="products__btn">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </a>
-                            <div class="products__container-items-info">
-                                <div class="products__container-items-rating">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-regular fa-star"></i></span>
-                                    <span class="products__container-items-quantily">(122)</span>
-                                </div>
-                                <div class="products__container-items-title">
-                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
-                                </div>
-                                <div class="products__container-items-sprices">
-                                    <div class="products__container-items-sprices-new">$2</div>
-                                    <div class="products__container-items-sprices-old">$2.12</div>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                            <div class="col l-4">
-                                <div class="products__container-items">
-                            <a href="" class="products__container-items-link">
-                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
-                                <span class="products__container-items-label">new</span>
-                                <div class="products__container-items-icon">
-                                    <button class="products__btn">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </a>
-                            <div class="products__container-items-info">
-                                <div class="products__container-items-rating">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-regular fa-star"></i></span>
-                                    <span class="products__container-items-quantily">(122)</span>
-                                </div>
-                                <div class="products__container-items-title">
-                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
-                                </div>
-                                <div class="products__container-items-sprices">
-                                    <div class="products__container-items-sprices-new">$2</div>
-                                    <div class="products__container-items-sprices-old">$2.12</div>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                            <div class="col l-4">
-                                <div class="products__container-items">
-                            <a href="" class="products__container-items-link">
-                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
-                                <span class="products__container-items-label">new</span>
-                                <div class="products__container-items-icon">
-                                    <button class="products__btn">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </a>
-                            <div class="products__container-items-info">
-                                <div class="products__container-items-rating">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-regular fa-star"></i></span>
-                                    <span class="products__container-items-quantily">(122)</span>
-                                </div>
-                                <div class="products__container-items-title">
-                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
-                                </div>
-                                <div class="products__container-items-sprices">
-                                    <div class="products__container-items-sprices-new">$2</div>
-                                    <div class="products__container-items-sprices-old">$2.12</div>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                            <div class="col l-4">
-                                <div class="products__container-items">
-                            <a href="" class="products__container-items-link">
-                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
-                                <span class="products__container-items-label">new</span>
-                                <div class="products__container-items-icon">
-                                    <button class="products__btn">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </a>
-                            <div class="products__container-items-info">
-                                <div class="products__container-items-rating">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-regular fa-star"></i></span>
-                                    <span class="products__container-items-quantily">(122)</span>
-                                </div>
-                                <div class="products__container-items-title">
-                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
-                                </div>
-                                <div class="products__container-items-sprices">
-                                    <div class="products__container-items-sprices-new">$2</div>
-                                    <div class="products__container-items-sprices-old">$2.12</div>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                            <div class="col l-4">
-                                <div class="products__container-items">
-                            <a href="" class="products__container-items-link">
-                                <img src="https://cdn.shopify.com/s/files/1/0466/3882/5624/products/653_1000x.jpg?v=1634584493" alt="" class="products__container-items-img">
-                                <span class="products__container-items-label">new</span>
-                                <div class="products__container-items-icon">
-                                    <button class="products__btn">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                    <button class="products__btn">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </div>
-                            </a>
-                            <div class="products__container-items-info">
-                                <div class="products__container-items-rating">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-regular fa-star"></i></span>
-                                    <span class="products__container-items-quantily">(122)</span>
-                                </div>
-                                <div class="products__container-items-title">
-                                    <a href="" class="products__container-items-title-link">Aspall - Classic Red Wine Vinegar 350ml</a>
-                                </div>
-                                <div class="products__container-items-sprices">
-                                    <div class="products__container-items-sprices-new">$2</div>
-                                    <div class="products__container-items-sprices-old">$2.12</div>
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-                        </div>
+                            
                     </div>
 
                     <!-- pagination -->
                      <div class="pagination">
                         <button class="page-btn">Previous</button>
-                        <button class="page-btn active">1</button>
-                        <button class="page-btn">2</button>
-                        <button class="page-btn">3</button>
-                        <button class="page-btn">4</button>
-                        <button class="page-btn">5</button>
-                        <button class="page-btn">6</button>
-                        <button class="page-btn">7</button>
-                        <button class="page-btn">8</button>
+                        <?php for ($i = 1; $i <= $tst; $i++) {
+                            if ($page == $i) {
+                                echo '<button class="page-btn active"><a href="index.php?act=shop&page='.$i.'">'.$i.'</a></button>';
+                            } else {
+                                echo '<button class="page-btn"><a href="index.php?act=shop&page='.$i.'">'.$i.'</a></button>';
+                            }
+                        } ?>
                         <button class="page-btn">Next</button>
                     </div>
                     

@@ -131,7 +131,8 @@ button.big-button.primary-button {
     margin-bottom: 58px;
     text-transform: capitalize;
     position:relative;
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto 58px;
 }
 
 
@@ -210,4 +211,23 @@ button.big-button.primary-button {
 
 #scrollTopBtn {
     bottom: 70px; 
+}
+
+.view__all--btn {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-text-color);
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.view__all--btn:hover {
+    text-decoration: underline;
+    color: var(--primary-color)
 }

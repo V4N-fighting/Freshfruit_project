@@ -730,6 +730,11 @@ button.banner__button-left{
 .products__container-scene{
     padding-right: 30px;
 }
+
+.products__container-scene:nth-child(n+5){
+    display: none;
+}
+
 .products__container-items{
     border: 1px solid #e5e7eb;
     margin-bottom: 30px;

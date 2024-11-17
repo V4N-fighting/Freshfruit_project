@@ -1,3 +1,4 @@
+
 <div class="contain">
 
         <!-- discount -->
@@ -62,7 +63,7 @@
 
         <!-- product -->
         <div class="products grid wide">
-            <div class="element--title">Our Products <a href="./shop.html" class="view__all--btn">View all</a></div>
+            <div class="element--title">Our Products <a href="index.php?act=shop" class="view__all--btn">View all</a></div>
             <div class="products__navbar">
                 <ul class="products__navbar-items">
                 <?php 
@@ -74,7 +75,7 @@
                 </ul>
             </div>
             <div class="products__container grid">
-                <div class="row mg-left-6">
+                <div class="row mg-left-6 ">
                     <?php 
                         // Kiểm tra nếu idCategory được gửi qua URL
                         $selectedCategory = isset($_GET['idCategory']) ? $_GET['idCategory'] : null;
@@ -169,7 +170,7 @@
                                         <p>SECS</p>
                                     </div>
                                 </div>
-                                <a href="./shop.html" class="button__hover--effect  "><span>KHÁM PHÁ NGAY</span></a>
+                                <a href="index.php?act=shop" class="button__hover--effect  "><span>KHÁM PHÁ NGAY</span></a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +232,7 @@
         
         <!-- blogs -->
         <div class="blogs ">
-            <div class="element--title">Lastest Blog <a href="./blog.html" class="view__all--btn">View all</a></div>
+            <div class="element--title">Lastest Blog <a href="index.php?act=blog" class="view__all--btn">View all</a></div>
             <div class="blogs-content">
                 <section class="splide" id="blog" aria-label="Ví dụ HTML cơ bản của Splide">
                     <div class="splide__track padding-t-b-10">
@@ -241,7 +242,7 @@
                                         echo '
                                         <li class="splide__slide col l-4">
                                             <div class="card">
-                                                <a  href="" class="card__link">
+                                                <a  href="index.php?act=new_blog&id='.$blog['idBlog'].'" class="card__link">
                                                     <div class="card__image">
                                                         <img src="'.$blog['img'].'" alt="'.$blog['tieude'].'">
                                                     </div>

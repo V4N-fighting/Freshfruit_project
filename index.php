@@ -49,7 +49,19 @@
                 include "view/contact.php";
                 break;
             case 'blog':
+                $allblogtype=getall_blogtype();
+                $allblog=getall_blog();
+                $rowCount = count($allblog);
                 include "view/blog.php";
+                break;
+            case 'new_blog':
+                if (isset($_GET['id'])&&($_GET['id'])) {
+                    $allblogtype=getall_blogtype();
+                    $allblog=getall_blog();
+                    $id=$_GET['id'];
+                    $curblog=getone_blog($id);
+                }
+                include "view/newblog.php";
                 break;
             case 'signout':
                 unset($_SESSION['role']);
